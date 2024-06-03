@@ -149,7 +149,7 @@ header{
     margin-bottom: 12px;
 }
 
-.event-content p:last-child{
+.event-content .last-p {
     margin-bottom: 0;
 }
 
@@ -272,8 +272,9 @@ header{
 }
 
 .news blockquote{
+    margin: 0;
     font-size: 18px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
 }
 
 .news figure {
@@ -355,6 +356,7 @@ figure figcaption {
 }
 
 .active-img {
+    width: 970px;
     margin: 0;
     padding: 0;
     vertical-align: bottom;
@@ -409,21 +411,25 @@ figure figcaption {
     text-transform: uppercase;
 }
 
-.cards-list{
+.cards-container {
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0 90px;
-    padding-bottom: 100px;
-    margin: 0;
     justify-content: space-between;
+    padding: 0 90px 100px;
+}
+
+.cards-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .card {
     width: 435px;;
     background-color: #FFFFFF;
     margin-bottom: 60px;
-    padding: 0 35px;
+    padding: 30px 35px 60px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .card:last-child {
@@ -431,11 +437,12 @@ figure figcaption {
 }
 
 .card h3 {
-    margin: 30px 0;
+    margin: 0;
     font-size: 28px;
     line-height: 36px;
     font-weight: 600;
     color: #6818D0;
+    margin-bottom: 30px;
 }
 
 .card figure {
@@ -486,8 +493,8 @@ figure figcaption {
 
 .card-description {
     list-style-type: disc;
-    padding-left: 25px;
-    margin-bottom: 60px;
+    padding-left: 20px;
+    color: #000000;
 }
 
 .card-description li {
